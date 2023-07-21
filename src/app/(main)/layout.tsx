@@ -1,9 +1,15 @@
 import { Navbar } from '@/components/navbar'
+import clsx from 'clsx'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { DM_Serif_Display, Inter } from 'next/font/google'
 import '../globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const dmSerifDisplay = DM_Serif_Display({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-dm-serif-display'
+})
 
 export const metadata: Metadata = {
   title: 'Igreja Batista da Trindade',
@@ -16,8 +22,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="pt-BR">
+      <body
+        className={clsx(
+          'font-sans text-zinc-900 antialiased',
+          inter.variable,
+          dmSerifDisplay.variable
+        )}
+      >
         <Navbar />
         {children}
       </body>
