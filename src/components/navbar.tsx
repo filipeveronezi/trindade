@@ -19,10 +19,6 @@ const navItems = [
     href: '/aulas-e-sermoes'
   },
   {
-    label: 'Blog',
-    href: '/blog'
-  },
-  {
     label: 'Contato',
     href: '/contato'
   }

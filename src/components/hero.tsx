@@ -9,15 +9,7 @@ export function Hero() {
   return (
     <section className="flex w-full flex-col items-center justify-center gap-4 py-20 lg:py-36">
       <div className="flex cursor-default flex-col items-center leading-snug">
-        <div className="flex w-full items-center justify-center px-8 font-extrabold lg:justify-between">
-          <motion.span
-            initial={{ opacity: 0, y: '5px' }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.9 }}
-            className="hidden uppercase lg:block"
-          >
-            2006
-          </motion.span>
+        <div className="flex w-full items-center justify-center px-8 font-extrabold">
           <motion.span
             initial={{ opacity: 0, y: '5px' }}
             animate={{ opacity: 1, y: 0 }}
@@ -26,20 +18,12 @@ export function Hero() {
           >
             Igreja Batista da
           </motion.span>
-          <motion.span
-            initial={{ opacity: 0, y: '5px' }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.9 }}
-            className="hidden uppercase lg:block"
-          >
-            Atibaia — SP
-          </motion.span>
         </div>
         <motion.span
           initial={{ opacity: 0, y: '5px' }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.9 }}
-          className="bg-gradient-to-tr from-black via-zinc-950 to-zinc-400 bg-clip-text font-serif text-6xl leading-none text-transparent md:text-9xl lg:text-[13rem]"
+          className="bg-gradient-to-tr from-black via-zinc-950 to-zinc-400 bg-clip-text font-serif text-6xl leading-none text-transparent md:text-9xl lg:text-9xl"
         >
           Trindade
         </motion.span>
@@ -48,7 +32,7 @@ export function Hero() {
         initial={{ opacity: 0, y: '5px' }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.9 }}
-        className="mt-20 bg-gradient-to-tr from-black via-zinc-950 to-zinc-600 bg-clip-text text-center text-3xl font-extrabold tracking-tight text-transparent lg:text-5xl"
+        className="mt-20 bg-gradient-to-tr from-black via-zinc-950 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl"
       >
         <Balancer>Uma comunidade de fé</Balancer>
       </motion.h1>
@@ -56,7 +40,7 @@ export function Hero() {
         initial={{ opacity: 0, y: '5px' }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.9 }}
-        className="text-center text-sm font-medium text-zinc-600 lg:text-xl"
+        className="text-center text-sm font-medium text-zinc-600 lg:text-base"
       >
         <Balancer>
           Adoramos a Deus de forma simples, com música, oração e exposição
