@@ -1,8 +1,10 @@
 'use client'
 
+import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Balancer } from 'react-wrap-balancer'
+import { twMerge } from 'tailwind-merge'
 import { buttonVariants } from './ui/button'
 
 export function Hero() {
@@ -32,7 +34,7 @@ export function Hero() {
         initial={{ opacity: 0, y: '5px' }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.9 }}
-        className="mt-20 bg-gradient-to-tr from-black via-zinc-950 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl"
+        className="mt-6 bg-gradient-to-tr from-black via-zinc-950 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl"
       >
         <Balancer>Uma comunidade de fé</Balancer>
       </motion.h1>
@@ -40,7 +42,7 @@ export function Hero() {
         initial={{ opacity: 0, y: '5px' }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.9 }}
-        className="text-center text-sm font-medium text-zinc-600 lg:text-base"
+        className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base"
       >
         <Balancer>
           Adoramos a Deus de forma simples, com música, oração e exposição
@@ -53,11 +55,15 @@ export function Hero() {
         transition={{ delay: 0.8, duration: 0.9 }}
         className="flex flex-col items-center justify-center gap-4 lg:flex-row"
       >
-        <Link href="#" className={buttonVariants({ variant: 'secondary' })}>
-          Entre em contato
-        </Link>
-        <Link href="#" className={buttonVariants({ variant: 'default' })}>
+        <Link
+          href="#"
+          className={twMerge(
+            buttonVariants({ variant: 'default' }),
+            'flex items-center justify-center gap-1'
+          )}
+        >
           Venha nos visitar
+          <ArrowLongRightIcon className="h-5 w-5" />
         </Link>
       </motion.div>
     </section>
