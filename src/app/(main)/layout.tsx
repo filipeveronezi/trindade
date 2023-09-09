@@ -1,3 +1,4 @@
+import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
