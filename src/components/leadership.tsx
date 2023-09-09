@@ -3,7 +3,7 @@ import { Balancer } from 'react-wrap-balancer'
 
 export function Leadership() {
   return (
-    <section className="mt-16 flex w-full max-w-3xl flex-col-reverse gap-8 sm:flex-row sm:items-center">
+    <section className="mt-8 flex w-full max-w-3xl flex-col-reverse gap-8 sm:flex-row sm:items-center">
       <Image
         className="mx-auto aspect-video h-full w-full rounded-xl object-cover sm:aspect-square sm:max-h-64 sm:max-w-[16rem]"
         src="/pedro.jpg"
