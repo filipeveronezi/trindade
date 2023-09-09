@@ -12,13 +12,13 @@ export function Hero() {
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          className="mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-cyan-50 px-4 py-1 text-sm font-medium text-zinc-800 transition-colors"
+          className="mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-cyan-50 px-4 py-1 text-xs font-medium text-zinc-800 transition-colors lg:text-sm"
         >
           <SparklesIcon className="h-4 w-4 text-primary" />
           Assistir ao sermão mais recente
         </Link>
         <div className="flex w-full items-center justify-center bg-gradient-to-tr from-zinc-900 via-neutral-700 to-zinc-300 bg-clip-text px-8 font-extrabold text-transparent">
-          <span className="font-serif font-medium lg:text-4xl">
+          <span className="font-serif text-xl font-medium lg:text-4xl">
             Igreja Batista da
           </span>
         </div>
