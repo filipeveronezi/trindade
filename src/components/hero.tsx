@@ -12,12 +12,12 @@ export function Hero() {
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          className="mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-full border border-zinc-200 px-4 py-1 text-sm text-zinc-800"
+          className="mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-cyan-50 px-4 py-1 text-sm font-medium text-zinc-800 transition-colors"
         >
           <SparklesIcon className="h-4 w-4 text-primary" />
           Assistir ao sermão mais recente
         </Link>
-        <div className="flex w-full items-center justify-center px-8 font-extrabold">
+        <div className="flex w-full items-center justify-center bg-gradient-to-tr from-zinc-900 via-neutral-700 to-zinc-300 bg-clip-text px-8 font-extrabold text-transparent">
           <span className="font-serif font-medium lg:text-4xl">
             Igreja Batista da
           </span>
@@ -26,7 +26,7 @@ export function Hero() {
           Trindade
         </span>
       </div>
-      <h1 className="mt-6 bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl">
+      <h1 className="mt-6 text-center text-xl font-extrabold tracking-tight lg:text-3xl">
         <Balancer>Uma comunidade de fé</Balancer>
       </h1>
       <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
