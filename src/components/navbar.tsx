@@ -36,23 +36,27 @@ export function Navbar() {
       <nav className="hidden h-10 w-max items-center justify-center rounded-full border bg-white/60 px-1 backdrop-blur-sm lg:flex">
         <ul className="flex w-max flex-row gap-4">
           {navItems.map((navItem) => (
-            <li
-              key={navItem.href}
-              className={twMerge(
-                clsx(
-                  'relative flex h-8 flex-row rounded-full px-4 font-medium transition-colors hover:cursor-pointer',
-                  pathname === navItem.href && 'text-white'
-                )
-              )}
-            >
-              {pathname === navItem.href && (
-                <motion.div
-                  layoutId="navItemBackground"
-                  className="absolute left-0 top-0 -z-10 h-full w-full rounded-full bg-primary"
-                />
-              )}
-              <Link href={navItem.href} className="flex flex-row items-center">
-                {navItem.label}
+            <li key={navItem.href}>
+              <Link
+                href={navItem.href}
+                className={twMerge(
+                  clsx(
+                    'relative flex h-8 flex-row rounded-full px-4 font-medium transition-colors hover:cursor-pointer',
+                    pathname === navItem.href
+                      ? 'text-white'
+                      : 'hover:bg-zinc-100'
+                  )
+                )}
+              >
+                {pathname === navItem.href && (
+                  <motion.div
+                    layoutId="navItemBackground"
+                    className="absolute left-0 top-0 -z-10 h-full w-full rounded-full bg-primary"
+                  />
+                )}
+                <span className="flex flex-row items-center">
+                  {navItem.label}
+                </span>
               </Link>
             </li>
           ))}
