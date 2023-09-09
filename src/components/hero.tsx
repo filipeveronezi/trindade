@@ -25,7 +25,7 @@ export function Hero() {
           initial={{ opacity: 0, y: '5px' }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.9 }}
-          className="bg-gradient-to-tr from-black via-zinc-950 to-zinc-400 bg-clip-text font-serif text-6xl leading-none text-transparent md:text-9xl lg:text-9xl"
+          className="bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-400 bg-clip-text font-serif text-6xl leading-none text-transparent md:text-9xl lg:text-9xl"
         >
           Trindade
         </motion.span>
@@ -34,7 +34,7 @@ export function Hero() {
         initial={{ opacity: 0, y: '5px' }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.9 }}
-        className="mt-6 bg-gradient-to-tr from-black via-zinc-950 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl"
+        className="mt-6 bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl"
       >
         <Balancer>Uma comunidade de fé</Balancer>
       </motion.h1>
