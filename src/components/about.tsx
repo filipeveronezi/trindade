@@ -88,37 +88,52 @@ export function About() {
         <ul className="flex flex-1 flex-col gap-4 text-xs font-medium text-zinc-950">
           <li>
             Teologia definida, com soteriologia calvinista e teologia
-            não-pentecostal — mas, comungamos com irmãos que, nestas questões (e
-            em muitas outras) pensam diferente de nós
+            não-pentecostal{' '}
+            <span className="text-zinc-600">
+              — mas, comungamos com irmãos que, nestas questões (e em muitas
+              outras) pensam diferente de nós
+            </span>
           </li>
           <li>
-            Identidade Institucional definida: somos batistas — mas, comungamos
-            com irmãos de diversas denominações (presbiterianos,
-            congregacionais, assembleianos, etc...), respeitando diferenças em
-            favor da unidade cristã
+            Identidade Institucional definida: somos batistas{' '}
+            <span className="text-zinc-600">
+              — mas, comungamos com irmãos de diversas denominações
+              (presbiterianos, congregacionais, assembleianos, etc...),
+              respeitando diferenças em favor da unidade cristã
+            </span>
           </li>
           <li>
-            Liturgia informal, autêntica e simples — buscamos adorar a Deus com
-            sinceridade, ao mesmo tempo em que valorizamos a ordem e a exposição
-            bíblica.
+            Liturgia informal, autêntica e simples{' '}
+            <span className="text-zinc-600">
+              — buscamos adorar a Deus com sinceridade, ao mesmo tempo em que
+              valorizamos a ordem e a exposição bíblica.
+            </span>
           </li>
           <li>
-            Relacionamentos verdadeiros e amplos: ser igreja é relacionar-se e
-            assumir os riscos que tais relacionamentos proporcionam. Ao mesmo
-            tempo, buscamos a proteção do rebanho com a instituição da
-            disciplina eclesiástica, praticada sob orientação neotestamentária.
+            Relacionamentos verdadeiros e amplos{' '}
+            <span className="text-zinc-600">
+              — ser igreja é relacionar-se e assumir os riscos que tais
+              relacionamentos proporcionam. Ao mesmo tempo, buscamos a proteção
+              do rebanho com a instituição da disciplina eclesiástica, praticada
+              sob orientação neotestamentária.
+            </span>
           </li>
           <li>
             Transparência, gente normal, vulnerabilidade instituída e
-            antilegalismo: buscamos a transparência (administrativa, espiritual
-            e institucional). Somos imperfeitos e admitimos, constantemente,
-            nossa incapacidade. Rejeitamos quaisquer formas de legalismo (em
-            roupas, costumes e valores).
+            antilegalismo{' '}
+            <span className="text-zinc-600">
+              — buscamos a transparência (administrativa, espiritual e
+              institucional). Somos imperfeitos e admitimos, constantemente,
+              nossa incapacidade. Rejeitamos quaisquer formas de legalismo (em
+              roupas, costumes e valores).
+            </span>
           </li>
           <li>
-            Oportunidade ampla de participação no planejamento e na execução:
-            prezamos pela participação da congregação nas decisões e na execução
-            de suas atividades. Ser igreja é agir como corpo.
+            Oportunidade ampla de participação no planejamento e na execução{' '}
+            <span className="text-zinc-600">
+              — prezamos pela participação da congregação nas decisões e na
+              execução de suas atividades. Ser igreja é agir como corpo.
+            </span>
           </li>
         </ul>
       </div>
