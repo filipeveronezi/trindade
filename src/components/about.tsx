@@ -35,7 +35,7 @@ export function About() {
           <li className="flex items-center gap-2">
             <CubeTransparentIcon className="h-8 w-8" />
             <span className="w-full">
-              Na Trindade - uma essência que subsiste eternamente em três
+              Na Trindade, uma essência que subsiste eternamente em três
               pessoas: Pai, Filho e Espírito Santo
             </span>
           </li>
