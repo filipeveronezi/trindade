@@ -1,7 +1,4 @@
-'use client'
-
-import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
-import { motion } from 'framer-motion'
+import { ArrowLongRightIcon, SparklesIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import { Balancer } from 'react-wrap-balancer'
 import { twMerge } from 'tailwind-merge'
@@ -9,52 +6,36 @@ import { buttonVariants } from './ui/button'
 
 export function Hero() {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-4 py-20 lg:py-36">
+    <section className="flex w-full flex-col items-center justify-center gap-4 pb-16 pt-20 lg:pt-32">
       <div className="flex cursor-default flex-col items-center leading-snug">
-        <div className="flex w-full items-center justify-center px-8 font-extrabold">
-          <motion.span
-            initial={{ opacity: 0, y: '5px' }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
-            className="font-serif font-medium lg:text-4xl"
-          >
-            Igreja Batista da
-          </motion.span>
-        </div>
-        <motion.span
-          initial={{ opacity: 0, y: '5px' }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.9 }}
-          className="bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-400 bg-clip-text font-serif text-6xl leading-none text-transparent md:text-9xl lg:text-9xl"
+        <Link
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-full border border-zinc-200 px-4 py-1 text-sm text-zinc-800"
         >
+          <SparklesIcon className="h-4 w-4 text-primary" />
+          Assistir ao sermão mais recente
+        </Link>
+        <div className="flex w-full items-center justify-center px-8 font-extrabold">
+          <span className="font-serif font-medium lg:text-4xl">
+            Igreja Batista da
+          </span>
+        </div>
+        <span className="bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-400 bg-clip-text font-serif text-6xl leading-none text-transparent md:text-9xl lg:text-9xl">
           Trindade
-        </motion.span>
+        </span>
       </div>
-      <motion.h1
-        initial={{ opacity: 0, y: '5px' }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.9 }}
-        className="mt-6 bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl"
-      >
+      <h1 className="mt-6 bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-3xl">
         <Balancer>Uma comunidade de fé</Balancer>
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: '5px' }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.9 }}
-        className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base"
-      >
+      </h1>
+      <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
         <Balancer>
           Adoramos a Deus de forma simples, com música, oração e exposição
           bíblica.
         </Balancer>
-      </motion.p>
-      <motion.div
-        initial={{ opacity: 0, y: '5px' }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.9 }}
-        className="flex flex-col items-center justify-center gap-4 lg:flex-row"
-      >
+      </p>
+      <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
         <Link
           href="#"
           className={twMerge(
@@ -65,7 +46,7 @@ export function Hero() {
           Venha nos visitar
           <ArrowLongRightIcon className="h-5 w-5" />
         </Link>
-      </motion.div>
+      </div>
     </section>
   )
 }
