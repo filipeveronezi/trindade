@@ -3,7 +3,7 @@ import { Balancer } from 'react-wrap-balancer'
 export function History() {
   return (
     <section className="mt-16 w-full max-w-3xl">
-      <h2 className="bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-xl">
+      <h2 className="bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text pl-6 text-xl font-extrabold tracking-tight text-transparent lg:pl-0 lg:text-center lg:text-xl">
         <Balancer>História</Balancer>
       </h2>
       <div className="mx-auto flex flex-col gap-8 border-l border-zinc-300 p-6 text-sm font-medium">
