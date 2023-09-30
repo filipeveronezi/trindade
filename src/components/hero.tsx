@@ -11,7 +11,7 @@ export function Hero() {
       <div className="flex cursor-default flex-col items-center leading-snug">
         <LastYoutubeVideoLink />
         <div className="flex w-full items-center justify-center bg-gradient-to-tr from-zinc-900 via-neutral-700 to-zinc-300 bg-clip-text px-8 font-extrabold text-transparent">
-          <span className="font-serif text-xl font-medium lg:text-4xl">
+          <span className="py-2 font-serif text-xl font-medium lg:text-4xl">
             Igreja Batista da
           </span>
         </div>
@@ -28,9 +28,19 @@ export function Hero() {
           bíblica.
         </Balancer>
       </p>
+      <div className="flex flex-col gap-2">
+        <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
+          EBD — Domingo, 9:30
+        </p>
+        <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
+          Culto — Domingo, 10:30
+        </p>
+      </div>
       <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
         <Link
-          href="#"
+          href="https://maps.app.goo.gl/mXB2g3v6bvJuB1fW6"
+          target="_blank"
+          rel="noopener noreferrer"
           className={twMerge(
             buttonVariants({ variant: 'default' }),
             'flex items-center justify-center gap-1'
