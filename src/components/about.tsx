@@ -68,7 +68,9 @@ export function About() {
           </li>
         </ul>
         <Link
-          href="#"
+          href="declaracao-fe-ibt.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-4 text-center text-xs text-zinc-600 underline transition-colors hover:text-zinc-950"
         >
           Acessar declaração de fé completa
