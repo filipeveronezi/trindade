@@ -24,8 +24,8 @@ export function Hero() {
       </h1>
       <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
         <Balancer>
-          Adoramos a Deus de forma simples, com música, oração e exposição
-          bíblica.
+          Somos uma igreja batista reformada. Adoramos a Deus de forma simples,
+          com música, oração e exposição bíblica.
         </Balancer>
       </p>
       <div className="flex flex-col gap-2">
