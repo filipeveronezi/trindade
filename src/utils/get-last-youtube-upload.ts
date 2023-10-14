@@ -25,9 +25,9 @@ interface YoutubeResponse {
   items: Item[]
 }
 
-export const getLastYoutubeUpload = async () => {
+export const getLastYoutubeUploads = async (quantity: number) => {
   const response = await fetch(
-    `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${YOUTUBE_PLAYLIST_ID}&key=${YOUTUBE_API_KEY}&maxResults=1&order=date`,
+    `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${YOUTUBE_PLAYLIST_ID}&key=${YOUTUBE_API_KEY}&maxResults=${quantity}&order=date`,
     {
       next: { revalidate: 60 * 60 } // 1 hour in seconds
     }
@@ -35,9 +35,11 @@ export const getLastYoutubeUpload = async () => {
 
   const data = (await response.json()) as YoutubeResponse
 
-  return {
-    title: data.items[0].snippet.title,
-    description: data.items[0].snippet.description,
-    url: `https://www.youtube.com/watch?v=${data.items[0].snippet.resourceId.videoId}`
-  }
+  return data.items.map((item) => {
+    return {
+      title: item.snippet.title,
+      description: item.snippet.description,
+      url: `https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`
+    }
+  })
 }

@@ -49,10 +49,7 @@ export function Navbar() {
                 )}
               >
                 {pathname === navItem.href && (
-                  <motion.div
-                    layoutId="navItemBackground"
-                    className="absolute left-0 top-0 -z-10 h-full w-full rounded-full bg-primary"
-                  />
+                  <motion.div className="absolute left-0 top-0 -z-10 h-full w-full rounded-full bg-primary" />
                 )}
                 <span className="flex flex-row items-center">
                   {navItem.label}

@@ -1,4 +1,4 @@
-import { getLastYoutubeUpload } from '@/utils/get-last-youtube-upload'
+import { getLastYoutubeUploads } from '@/utils/get-last-youtube-upload'
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import {
@@ -10,7 +10,7 @@ import {
 import { YoutubeIcon } from './youtube-icon'
 
 export async function LastYoutubeVideoLink() {
-  const lastYoutubeVideo = await getLastYoutubeUpload()
+  const [lastYoutubeVideo] = await getLastYoutubeUploads(1)
 
   return (
     <TooltipProvider>
