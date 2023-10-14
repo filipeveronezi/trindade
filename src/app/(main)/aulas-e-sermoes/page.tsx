@@ -20,7 +20,7 @@ export default async function Sermons() {
         ))}
       </div>
       <Link
-        href="https://maps.app.goo.gl/mXB2g3v6bvJuB1fW6"
+        href="https://www.youtube.com/playlist?list=PLOEl-C-n9oJ7Wey3vgHWIjM9sIP9lY1Ta"
         target="_blank"
         rel="noopener noreferrer"
         className={twMerge(
