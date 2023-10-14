@@ -30,6 +30,17 @@ export default function Contact() {
             <span>contato@batistatrindade.com.br</span>
           </Link>
         </div>
+        <div className="flex flex-col gap-1">
+          <h2 className="font-bold">Telefone</h2>
+          <Link
+            className="text-cyan-600 decoration-cyan-700 underline-offset-2 transition-colors hover:text-cyan-700 hover:underline"
+            href="https://api.whatsapp.com/send?phone=5511987713322"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>(11) 98771 3322</span>
+          </Link>
+        </div>
       </div>
     </main>
   )
