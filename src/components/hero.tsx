@@ -7,7 +7,7 @@ import { buttonVariants } from './ui/button'
 
 export function Hero() {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-4 pb-16 pt-20 lg:pt-32">
+    <section className="flex w-full flex-col items-center justify-center gap-4 pb-16 pt-20 lg:pt-28">
       <div className="flex cursor-default flex-col items-center leading-snug">
         <LastYoutubeVideoLink />
         <div className="flex w-full items-center justify-center bg-gradient-to-tr from-zinc-900 via-neutral-700 to-zinc-300 bg-clip-text px-8 font-extrabold text-transparent">
