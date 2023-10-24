@@ -30,7 +30,7 @@ export function Hero() {
       </p>
       <div className="flex flex-col gap-2">
         <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
-          EBD — Domingo, 9:30
+          EBD — Domingo, 09:30
         </p>
         <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
           Culto — Domingo, 10:30
