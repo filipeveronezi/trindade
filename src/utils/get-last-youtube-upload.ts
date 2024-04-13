@@ -39,7 +39,8 @@ export const getLastYoutubeUploads = async (quantity: number) => {
     return {
       title: item.snippet.title,
       description: item.snippet.description,
-      url: `https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`
+      url: `https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`,
+      publishedAt: item.snippet.publishedAt
     }
   })
 }

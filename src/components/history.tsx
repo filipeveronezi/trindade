@@ -1,14 +1,12 @@
-import { Balancer } from 'react-wrap-balancer'
-
 export function History() {
   return (
     <section className="mt-16 w-full max-w-3xl">
-      <h2 className="bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text pl-6 text-xl font-extrabold tracking-tight text-transparent lg:pl-0 lg:text-center lg:text-xl">
-        <Balancer>História</Balancer>
+      <h2 className="text-balance bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text pl-6 text-xl font-extrabold tracking-tight text-transparent lg:pl-0 lg:text-center lg:text-xl">
+        História
       </h2>
       <div className="mx-auto flex flex-col gap-8 border-l border-zinc-300 p-6 text-sm font-medium">
         <p className="relative">
-          <span className="absolute inset-y-0 -left-8 my-auto h-4 w-4 rounded-full border border-zinc-400 bg-white" />
+          <span className="absolute inset-y-0 -left-8 my-auto size-4 rounded-full border border-zinc-400 bg-white" />
           Fundação{' '}
           <span className="text-zinc-600">
             — A Igreja Batista da Trindade reuniu-se pela primeira vez em
@@ -17,7 +15,7 @@ export function History() {
           </span>
         </p>
         <p className="relative">
-          <span className="absolute inset-y-0 -left-8 my-auto h-4 w-4 rounded-full border border-zinc-400 bg-white" />
+          <span className="absolute inset-y-0 -left-8 my-auto size-4 rounded-full border border-zinc-400 bg-white" />
           Primeiro local{' '}
           <span className="text-zinc-600">
             — Por volta de um ano depois de reunir-se em casas, mudou-se para a
@@ -26,7 +24,7 @@ export function History() {
           </span>
         </p>
         <p className="relative">
-          <span className="absolute inset-y-0 -left-8 my-auto h-4 w-4 rounded-full border border-zinc-400 bg-white" />
+          <span className="absolute inset-y-0 -left-8 my-auto size-4 rounded-full border border-zinc-400 bg-white" />
           Primeiro Pastor e segundo local{' '}
           <span className="text-zinc-600">
             — Ali, a Igreja Batista Redenção permaneceu por 05 anos, liderada
@@ -36,7 +34,7 @@ export function History() {
           </span>
         </p>
         <p className="relative">
-          <span className="absolute inset-y-0 -left-8 my-auto h-4 w-4 rounded-full border border-zinc-400 bg-white" />
+          <span className="absolute inset-y-0 -left-8 my-auto size-4 rounded-full border border-zinc-400 bg-white" />
           Pastor atual{' '}
           <span className="text-zinc-600">
             — Em Maio de 2014, o pastor Pedro Wazen de Freitas assumiu a igreja,
@@ -44,7 +42,7 @@ export function History() {
           </span>
         </p>
         <p className="relative">
-          <span className="absolute inset-y-0 -left-8 my-auto h-4 w-4 rounded-full border border-zinc-400 bg-white" />
+          <span className="absolute inset-y-0 -left-8 my-auto size-4 rounded-full border border-zinc-400 bg-white" />
           Mudança de Nome{' '}
           <span className="text-zinc-600">
             — Em 01JAN de 2018, a igreja emancipou-se e adotou o nome de Igreja
@@ -52,7 +50,7 @@ export function History() {
           </span>
         </p>
         <p className="relative">
-          <span className="absolute inset-y-0 -left-8 my-auto h-4 w-4 rounded-full border border-zinc-400 bg-white" />
+          <span className="absolute inset-y-0 -left-8 my-auto size-4 rounded-full border border-zinc-400 bg-white" />
           Local atual{' '}
           <span className="text-zinc-600">
             — Em Agosto de 2020, durante a pandemia, a igreja mudou de lugar

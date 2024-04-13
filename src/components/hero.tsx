@@ -1,6 +1,5 @@
 import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
-import { Balancer } from 'react-wrap-balancer'
 import { twMerge } from 'tailwind-merge'
 import { LastYoutubeVideoLink } from './last-youtube-video-link'
 import { buttonVariants } from './ui/button'
@@ -19,14 +18,12 @@ export function Hero() {
           Trindade
         </span>
       </div>
-      <h1 className="mt-6 text-center text-xl font-extrabold tracking-tight lg:text-3xl">
-        <Balancer>Uma comunidade de fé</Balancer>
+      <h1 className="mt-6 text-balance text-center text-xl font-extrabold tracking-tight lg:text-3xl">
+        Uma comunidade de fé
       </h1>
-      <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
-        <Balancer>
-          Somos uma igreja batista reformada. Adoramos a Deus de forma simples,
-          com música, oração e exposição bíblica.
-        </Balancer>
+      <p className="max-w-md text-balance text-center text-sm font-medium text-zinc-600 lg:text-base">
+        Somos uma igreja batista reformada. Adoramos a Deus de forma simples,
+        com música, oração e exposição bíblica.
       </p>
       <div className="flex flex-col gap-2">
         <p className="max-w-md text-center text-sm font-medium text-zinc-600 lg:text-base">
@@ -47,7 +44,7 @@ export function Hero() {
           )}
         >
           Venha nos visitar
-          <ArrowLongRightIcon className="h-5 w-5" />
+          <ArrowLongRightIcon className="size-5" />
         </Link>
       </div>
     </section>
