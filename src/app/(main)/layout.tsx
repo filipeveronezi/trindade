@@ -1,5 +1,6 @@
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
+import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { DM_Serif_Display, Inter } from 'next/font/google'
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
