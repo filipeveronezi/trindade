@@ -20,14 +20,6 @@ export function ImageGallery() {
           width={300}
           height={300}
         />
-
-        <Image
-          className="aspect-square rounded-xl object-cover"
-          src="/galeria-4.jpg"
-          alt="Membro da Igreja Batista da Trindade ajudando com a limpeza"
-          width={300}
-          height={300}
-        />
       </div>
       <div className="grid max-w-xs gap-4">
         <Image
@@ -45,12 +37,15 @@ export function ImageGallery() {
           width={300}
           height={300}
         />
+      </div>
+      <div className="col-span-2 w-full">
         <Image
-          className="aspect-square rounded-xl object-cover"
-          src="/galeria-5.jpg"
-          alt="Culto da Igreja Batista da Trindade"
-          width={300}
-          height={300}
+          className="aspect-[16/6] w-full rounded-xl object-cover"
+          priority
+          src="/igreja-2025.jpg"
+          alt="Igreja Batista da Trindade"
+          width={500}
+          height={500}
         />
       </div>
     </section>
