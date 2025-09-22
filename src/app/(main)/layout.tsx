@@ -5,6 +5,8 @@ import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { DM_Serif_Display, Inter } from 'next/font/google'
 import '../globals.css'
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const dmSerifDisplay = DM_Serif_Display({
@@ -36,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Analytics />
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string} />
         <Footer />
       </body>
     </html>
