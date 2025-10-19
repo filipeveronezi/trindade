@@ -4,7 +4,7 @@ import Link from 'next/link'
 export function About() {
   return (
     <section className="mt-16 flex max-w-3xl flex-col gap-4 lg:flex-row">
-      <div className="flex w-full flex-1 flex-col gap-8 rounded-xl border border-zinc-200 p-5">
+      <div className="flex w-full flex-1 flex-col gap-8 rounded-xl border bg-white p-5">
         <div className="flex flex-col gap-2">
           <h2 className="text-balance bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-xl">
             Declaração de fé
@@ -73,7 +73,7 @@ export function About() {
           Acessar declaração de fé completa
         </Link>
       </div>
-      <div className="flex w-full flex-1 flex-col gap-8 rounded-xl border border-zinc-200 p-5">
+      <div className="flex w-full flex-1 flex-col gap-8 rounded-xl border bg-white p-5">
         <div className="flex flex-col gap-2">
           <h2 className="text-balance bg-gradient-to-tr from-zinc-900 via-neutral-800 to-zinc-600 bg-clip-text text-center text-xl font-extrabold tracking-tight text-transparent lg:text-xl">
             Características

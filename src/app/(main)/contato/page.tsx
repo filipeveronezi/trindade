@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export default function Contact() {
   return (
-    <main className="relative mx-auto flex min-h-screen max-w-screen-2xl flex-col items-center overflow-y-hidden px-4 py-20">
-      <h1 className="mt-6 text-center text-xl font-extrabold tracking-tight lg:text-3xl">
+    <main className="relative mx-auto flex min-h-screen max-w-screen-2xl flex-col items-center overflow-y-hidden px-4 pb-20 pt-8 lg:pt-28">
+      <h1 className="text-center text-xl font-extrabold tracking-tight lg:text-3xl">
         Contato
       </h1>
       <div className="flex flex-col gap-4 py-5">

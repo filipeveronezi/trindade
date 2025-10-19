@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={clsx(
-          'font-sans text-zinc-900 antialiased',
+          'bg-zinc-100 font-sans text-zinc-900 antialiased',
           inter.variable,
           dmSerifDisplay.variable
         )}

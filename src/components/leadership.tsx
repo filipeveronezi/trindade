@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export function Leadership() {
   return (
-    <section className="mt-8 flex w-full max-w-3xl flex-col-reverse gap-8 sm:flex-row sm:items-center">
+    <section className="mt-16 flex w-full max-w-3xl flex-col-reverse gap-8 sm:flex-row sm:items-center">
       <Image
-        className="mx-auto aspect-video size-full rounded-xl object-cover sm:aspect-square sm:max-h-64 sm:max-w-64"
+        className="mx-auto aspect-video size-full rounded-xl border bg-white object-cover p-1 sm:aspect-square sm:max-h-64 sm:max-w-64"
         src="/pedro.jpg"
         alt="Pastor Pedro"
         width={1600}

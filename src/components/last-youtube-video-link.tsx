@@ -20,9 +20,9 @@ export async function LastYoutubeVideoLink() {
             href={lastYoutubeVideo.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-cyan-50 px-4 py-1 text-xs font-medium text-zinc-800 transition-colors lg:text-sm"
+            className="mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-full border bg-white px-3 py-2 text-xs font-medium text-zinc-800 transition-colors lg:text-sm"
           >
-            <SparklesIcon className="h-4 w-4 text-primary" />
+            <SparklesIcon className="size-4 text-primary" />
             Assistir ao sermão mais recente
           </Link>
         </TooltipTrigger>
@@ -33,7 +33,7 @@ export async function LastYoutubeVideoLink() {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2"
           >
-            <YoutubeIcon className="h-4 w-4" />
+            <YoutubeIcon className="size-4" />
             <p className="text-sm font-medium">{lastYoutubeVideo.title}</p>
           </Link>
         </TooltipContent>
